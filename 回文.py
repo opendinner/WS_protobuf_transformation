@@ -5,4 +5,8 @@ def isHuiwen():
             print("不是回文")
             return
     print("是回文")
-    
+
+from lupa import LuaRuntime
+
+lua = LuaRuntime()
+lua_module = lua.require("hello_world")
